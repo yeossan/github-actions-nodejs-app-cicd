@@ -1,17 +1,17 @@
 // app.js
-const http = require('http');
+const http = require("http");
 
-const hostname = '0.0.0.0';
+const hostname = "0.0.0.0";
 const port = 3000;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello, World!\n');
+  res.setHeader("Content-Type", "text/plain");
+  res.end("Hello, World!\n");
 });
 
 server.listen(port, hostname, () => {
-  console.log(`Server is running at http://${hostname}:${port}/`);
+  console.log(`Server iis running at http://${hostname}:${port}/`);
 });
 
 module.exports = server;
